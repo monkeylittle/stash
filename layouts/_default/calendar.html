@@ -11,7 +11,28 @@
         <p>{{ i18n "last_update" }}: {{ time.Format ":date_long" .Lastmod }}</p>
       </div>
       <div class="col-md-8">
-        {{ .Content }}
+        {{ $calendar := $.Page.Params.calendar }}
+        <div class="row">
+          {{ range $calendar }}
+
+          <h2>{{ .year }} Calendar</h2>
+        </div>
+
+        {{ $events := .events }}
+        {{ range $events }}
+
+        <div class="col-md-4">
+          <img src="/images/flags/{{ .country }}-24px.png" alt="{{ .country }}" title="{{ .country }}">
+        </div>
+        <div class="col-md-4">
+          <p>{{ .date }}</p>
+        </div>
+        <div class="col-md-4">
+          <p>{{ .name }}</p>
+        </div>
+
+        {{ end }}
+        {{ end }}
       </div>
     </div>
   </div>
