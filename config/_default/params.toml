@@ -17,13 +17,11 @@ image = "images/logo.png" # this image will be used as fallback if a page has no
 # Whether to display text descriptors (like "E-mail: ", "Phone: ") before the address block elements
 address_descriptors = false
 # contact info
-phone = "0124857985320"
-email = "demo@email.com"
+phone = ""
+email = ""
 location = """
-**Themefisher**
-North Main Street
-Brooklyn, New South Wales
-Australia
+**Dublin**,
+Ireland
 """
 # copyright
 # copyright = "Designed By [Themefisher](https://themefisher.com/) & Developed By [Gethugothemes](https://gethugothemes.com/)"
@@ -50,7 +48,7 @@ success_image = "images/paper-plane.svg"
 
 # Preloader
 [preloader]
-enable = true
+enable = false
 preloader = "" # use jpg, png, svg or gif format.
 
 # Navigation button
