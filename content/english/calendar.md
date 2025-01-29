@@ -1,8 +1,8 @@
 ---
 title: "Upcoming Races"
 description: "Say hello or cheer from the sides, you're support is always appreciated."
-lastmod: 2021-04-01T00:00:00
-bg_image: "images/feature-bg.jpg"
+lastmod: 2025-01-29T00:00:00
+bg_image: "images/IMG_2001.jpeg"
 layout: calendar
 calendar: [
   {
