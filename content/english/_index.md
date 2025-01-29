@@ -9,7 +9,7 @@ banner:
   button:
     enable: true
     label: "Support my Journey"
-    link: "partners/"
+    link: "contact/"
 
 ############################# About #################################
 about:
@@ -50,27 +50,27 @@ service:
 cta:
   enable: true
   bg_image: "images/call-to-action-bg.jpg"
-  title: "We design delightful digital experiences."
-  content: "Read more about what we do and our philosophy of design. Judge for yourself The work and results <br> we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
+  title: "Help me reach the stars."
+  content: "While there have been many inspiring role models who have paved the way for women in cycling we are still a minority in a niche sport.  Combined with living outside the cycling heartlands means that I am grateful for all the support I receive. This support allows me to gain valuable experience that would otherwise be unattainable.  If you are passionate about supporting young women in sport, reach out to discuss how we might work together."
   button:
     enable: true
     label: "SUPPORT MY JOURNEY"
-    link: "partners/"
+    link: "contact/"
 
 ############################# Funfacts ###############################
 funfacts:
-  enable: true
+  enable: false
   title: "Fun Facts About Us"
   description: "'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, <br> there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics'"
   funfact_item:
   # funfacts item loop
-  - icon: "fas fa-mug-hot" #https://fontawesome.com/v5.15/icons
-    name: "Cups Of Coffee"
-    count: "99"
+  - icon: "fas fa-globe" #https://fontawesome.com/v5.15/icons
+    name: "Countries Visited"
+    count: "9"
 
   # funfacts item loop
-  - icon: "fas fa-glasses" #https://fontawesome.com/v5.15/icons
-    name: "Article Written"
+  - icon: "fas fa-biking" #https://fontawesome.com/v5.15/icons
+    name: "Races Entered"
     count: "45"
 
   # funfacts item loop
