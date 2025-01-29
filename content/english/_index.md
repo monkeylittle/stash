@@ -42,7 +42,7 @@ portfolio:
 
 ############################# Service ############################
 service:
-  enable: true
+  enable: false
   # service content comes from "service.md" file
 
 
@@ -54,8 +54,8 @@ cta:
   content: "Read more about what we do and our philosophy of design. Judge for yourself The work and results <br> we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
   button:
     enable: true
-    label: "Tell Us Your Story"
-    link: "contact/"
+    label: "SUPPORT MY JOURNEY"
+    link: "partners/"
 
 ############################# Funfacts ###############################
 funfacts:

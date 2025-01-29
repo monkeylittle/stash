@@ -28,31 +28,26 @@ weight = 5
 
 # footer menu
 [[footer]]
-name = "About"
-url = "about/"
+name = "Home"
+url = ""
 weight = 2
 
 [[footer]]
-name = "Project"
-url = "project/"
+name = "Calendar"
+url = "calendar/"
 weight = 3
 
 [[footer]]
-name = "Service"
-url = "service/"
+name = "Partners"
+url = "partners/"
 weight = 4
 
 [[footer]]
-name = "Pricing"
-url = "pricing/"
+name = "Blog"
+url = "blog/"
 weight = 5
-
-[[footer]]
-name = "FAQ"
-url = "faq/"
-weight = 6
 
 [[footer]]
 name = "Contact"
 url = "contact/"
-weight = 7
+weight = 6

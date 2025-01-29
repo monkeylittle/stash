@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ with .Params.about }}
+{{ if .enable }}
+<section class="service-about section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        {{ with .title }}<h2>{{ . | markdownify }}</h2>{{ end }}
+        {{ with .content }}<div class="mt-30">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
+      </div>
+      {{ with .image -}}
+      <div class="col-md-6">
+        <img class="img-responsive" src="{{ . | relURL }}">
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- Service -->
+{{ if .Params.service.enable }}
+{{ partial "service.html" . }}
+{{ end }}
+<!-- /service -->
+
+<!-- Call to action -->
+{{ if .Params.cta.enable }}
+{{ partial "cta.html" . }}
+{{ end }}
+<!-- /Call to action -->
+
+{{ end }}
