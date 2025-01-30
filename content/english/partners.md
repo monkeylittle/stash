@@ -3,7 +3,7 @@ title: "Partners"
 description: "Join me on this exciting journey."
 bg_image: "images/IMG_2001.jpeg"
 layout: partners
-draft: false
+draft: true
 
 
 ########################### about service #############################
