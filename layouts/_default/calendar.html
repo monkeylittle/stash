@@ -12,25 +12,24 @@
       </div>
       <div class="col-md-8">
         {{ $calendar := $.Page.Params.calendar }}
-        <div class="row">
-          {{ range $calendar }}
 
-          <h2>{{ .year }} Calendar</h2>
-        </div>
+        {{ range $calendar }}
+
+        <h2>{{ .year }} Calendar</h2>
 
         {{ $events := .events }}
         {{ range $events }}
-
-        <div class="col-md-4">
+        <div class="row">
+        <div class="col-sm-4">
           <img src="/images/flags/{{ .country }}-24px.png" alt="{{ .country }}" title="{{ .country }}">
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-4">
           <p>{{ .date }}</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-4">
           <p>{{ .name }}</p>
         </div>
-
+        </div>
         {{ end }}
         {{ end }}
       </div>

@@ -49,7 +49,7 @@ service:
 ############################ call to action ###########################
 cta:
   enable: true
-  bg_image: "images/call-to-action-bg.jpg"
+  bg_image: "images/53891259516_9242b7495b_o.jpeg"
   title: "Help me reach the stars."
   content: "While there have been many inspiring role models who have paved the way for women in cycling we are still a minority in a niche sport.  Combined with living outside the cycling heartlands means that I am grateful for all the support I receive. This support allows me to gain valuable experience that would otherwise be unattainable.  If you are passionate about supporting young women in sport, reach out to discuss how we might work together."
   button:
