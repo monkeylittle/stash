@@ -32,7 +32,7 @@ portfolio:
   In 2025, I will continue to pursue my goals riding for Orwell Wheelers domestically while riding in the colours of WOOP Girls in Europe.
 
 
-  I'm very excited about my race programme in 2025 which will see me race in Ireland, Denmark, Belgium, UK and the Netherlands.
+  I'm very excited about my race programme in 2025 which will see me race in Ireland, UK, Denmark, Belgium, France and the Netherlands.
   "
   button:
     enable: true
