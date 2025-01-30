@@ -34,9 +34,14 @@ calendar: [
         name: "Trophée de l'Aisne"
       },
       {
-        date: "28th July - 1st Agust",
+        date: "28th July - 1st August",
         country: "netherlands",
         name: "Jeugdtour Assen"
+      },
+      {
+        date: "16th August - 17th August",
+        country: "ireland",
+        name: "National Youth Road Championships"
       },
     ]
   }

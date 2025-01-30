@@ -20,13 +20,13 @@
         {{ $events := .events }}
         {{ range $events }}
         <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-2">
           <img src="/images/flags/{{ .country }}-24px.png" alt="{{ .country }}" title="{{ .country }}">
         </div>
         <div class="col-sm-4">
           <p>{{ .date }}</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-6">
           <p>{{ .name }}</p>
         </div>
         </div>
