@@ -11,10 +11,10 @@ name = "Calendar"
 url = "calendar/"
 weight = 2
 
-[[main]]
-name = "Partners"
-url = "partners/"
-weight = 3
+# [[main]]
+# name = "Partners"
+# url = "partners/"
+# weight = 3
 
 [[main]]
 name = "Blog"
@@ -37,10 +37,10 @@ name = "Calendar"
 url = "calendar/"
 weight = 3
 
-[[footer]]
-name = "Partners"
-url = "partners/"
-weight = 4
+# [[footer]]
+# name = "Partners"
+# url = "partners/"
+# weight = 4
 
 [[footer]]
 name = "Blog"
