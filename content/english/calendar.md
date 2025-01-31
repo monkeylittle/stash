@@ -1,7 +1,7 @@
 ---
 title: "Upcoming Races"
 description: "Say hello or cheer from the sides, you're support is always appreciated."
-lastmod: 2025-01-29T00:00:00
+lastmod: 2025-01-31T00:00:00
 bg_image: "images/IMG_2001.jpeg"
 layout: calendar
 calendar: [
@@ -9,22 +9,27 @@ calendar: [
     year: "2025",
     events: [
       {
-        date: "22 March - 23 March",
+        date: "11th January - 12th January",
+        country: "ireland",
+        name: "Cyclocross National Championships"
+      },
+      {
+        date: "22nd March - 23rd March",
         country: "ireland",
         name: "Rás na nÓg"
       },
       {
-        date: "19 April - 21 April",
+        date: "19th April - 21st April",
         country: "denmark",
         name: "3 Dage i Nord"
       },
       {
-        date: "11 May",
+        date: "11th May",
         country: "belgium",
         name: "Gent-Wevelgem"
       },
       {
-        date: "25 May",
+        date: "25th May",
         country: "belgium",
         name: "Ronde von Vlaanderen"
       },
@@ -41,7 +46,7 @@ calendar: [
       {
         date: "16th August - 17th August",
         country: "ireland",
-        name: "National Youth Road Championships"
+        name: "Youth Road National Championships"
       },
     ]
   }
