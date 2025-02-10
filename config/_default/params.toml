@@ -43,7 +43,7 @@ use_recaptcha = true
 ## Ignored if `use_netlify = true` (custom [success page](https://docs.netlify.com/forms/setup/#success-messages) is already included)
 # action = "https://formspree.io/f/myyajeed"
 use_formsubmit = true
-action = "https://formsubmit.co/john.turner@monkeylittle.com"
+action = "https://formsubmit.co/98e1e017b11c07e5b0f7740613b3586a"
 # Image on custom success page `/message_sent.html`
 success_image = "images/paper-plane.svg"
 
