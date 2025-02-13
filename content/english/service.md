@@ -93,6 +93,12 @@ service:
     # service item loop
     - icon : fas fa-medal #https://fontawesome.com/v5.15/icons
       icon_color: "D4AF37"
+      name: Dublin World Cup
+      content: "2023: 1st in the Dublin World Cup youth race."
+
+    # service item loop
+    - icon : fas fa-medal #https://fontawesome.com/v5.15/icons
+      icon_color: "D4AF37"
       name: European Junior Cycling Tour Assen
       content: "2023: 1st girl winning 2 stages in this competitive 5 day stage race in Assen, Netherlands."
 
