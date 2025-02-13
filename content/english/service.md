@@ -1,13 +1,13 @@
 ---
-title: "Service"
+title: "Achievement"
 description: "this is meta description"
 bg_image: "images/feature-bg.jpg"
-layout: "service"
-draft: false
+layout: "achievement"
+draft: true
 
 ########################### about service #############################
 about:
-  enable : true
+  enable : false
   title : "Creative UX/UI Design Agency"
   content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate soluta corporis odit, optio
           cum! Accusantium numquam ab, natus excepturi architecto earum ipsa aliquam, illum, omnis rerum, eveniet
@@ -22,7 +22,7 @@ about:
 
 ########################## featured service ############################
 featured_service:
-  enable : true
+  enable : false
   service_item:
     # featured service item loop
     - name : "Interface Design"
@@ -46,49 +46,62 @@ featured_service:
 ############################# Service ###############################
 service:
   enable : true
-  title : "Our Services"
-  description : "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, <br> there live the
-          blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"
+  title : "Select Achievements"
+  description : ""
   service_item:
-    # service item loop
-    - icon : fas fa-bullseye #https://fontawesome.com/v5.15/icons
-      name: Branding
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+    # 1st: D4AF37
+    # 2nd: C0C0C0
+    # 3rd: 9F7A34
+    # other:
 
     # service item loop
-    - icon : fas fa-layer-group #https://fontawesome.com/v5.15/icons
-      name: Web Design
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+    - icon : fas fa-medal #https://fontawesome.com/v5.15/icons
+      icon_color: "C0C0C0"
+      name: Cyclocross National Championships
+      content: "2025: 2nd in the Cycling Ireland Cyclocross National Championship."
 
     # service item loop
-    - icon : fas fa-image #https://fontawesome.com/v5.15/icons
-      name: App Design
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+    - icon : fas fa-medal #https://fontawesome.com/v5.15/icons
+      icon_color: "D4AF37"
+      name: Dublin World Cup
+      content: "2024: 1st in the Dublin World Cup youth race."
+
+    # service item loop  
+    - icon : fas fa-medal #https://fontawesome.com/v5.15/icons
+      icon_color: "D4AF37"
+      name: European Junior Cycling Tour Assen
+      content: "2024: 1st girl, winning 2 stages in this competitive 5 day stage race in Assen, Netherlands."
 
     # service item loop
-    - icon : fas fa-bug #https://fontawesome.com/v5.15/icons
-      name: Start Up
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+    - icon : fas fa-medal #https://fontawesome.com/v5.15/icons
+      icon_color: "D4AF37"
+      name: Parike
+      content: "2024: 1st girl in this demanding omloop in Parike, Belgium."
 
     # service item loop
-    - icon : fas fa-headphones-alt #https://fontawesome.com/v5.15/icons
-      name: Logo Design
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+    - icon : fas fa-medal #https://fontawesome.com/v5.15/icons
+      icon_color: "C0C0C0"
+      name: Antwerp Cycling Tour
+      content: "2024: 2nd girl in this competitive 3 day stage race in around Antwerp, Belgium."
 
     # service item loop
-    - icon : fas fa-leaf #https://fontawesome.com/v5.15/icons
-      name: Development
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+    - icon : fas fa-medal #https://fontawesome.com/v5.15/icons
+      icon_color: "D4AF37"
+      name: Cyclocross National Championships
+      content: "2024: 1st in the Cycling Ireland Cyclocross National Championship."
 
     # service item loop
-    - icon : fas fa-globe-asia #https://fontawesome.com/v5.15/icons
-      name: Brand Identity
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+    - icon : fas fa-medal #https://fontawesome.com/v5.15/icons
+      icon_color: "D4AF37"
+      name: European Junior Cycling Tour Assen
+      content: "2023: 1st girl winning 2 stages in this competitive 5 day stage race in Assen, Netherlands."
 
     # service item loop
-    - icon : fas fa-feather #https://fontawesome.com/v5.15/icons
-      name: Brand Identity
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+    - icon : fas fa-medal #https://fontawesome.com/v5.15/icons
+      icon_color: "D4AF37"
+      name: Kanturk Youth Races
+      content: "2023: 1st girl winning 2 out of 3 stages in this 2 day stage race."
+
 
 ############################# call to action #################################
 cta:

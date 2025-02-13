@@ -42,7 +42,7 @@ portfolio:
 
 ############################# Service ############################
 service:
-  enable: false
+  enable: true
   # service content comes from "service.md" file
 
 
