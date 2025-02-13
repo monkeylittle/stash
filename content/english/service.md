@@ -3,7 +3,7 @@ title: "Achievement"
 description: "this is meta description"
 bg_image: "images/feature-bg.jpg"
 layout: "achievement"
-draft: true
+draft: false
 
 ########################### about service #############################
 about:
