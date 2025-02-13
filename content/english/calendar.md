@@ -39,10 +39,16 @@ calendar: [
         name: "Ronde von Vlaanderen"
       },
       {
-        date: "7th June - June 9th June",
+        date: "7th June - 9th June",
         country: "france",
         discipline: "road",
         name: "Trophée de l'Aisne"
+      },
+      {
+        date: "13th July",
+        country: "belgium",
+        discipline: "road",
+        name: "Parike"
       },
       {
         date: "28th July - 1st August",
