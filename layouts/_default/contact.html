@@ -60,6 +60,7 @@
             {{ with site.Params.email }}<li><i class="fas fa-envelope"></i>{{ if $add_address_descriptors }}{{ i18n "email" | printf "%s: " }}{{ end }}{{ partial "cloak_email" . }}</li>{{ end }}
             {{ with site.Params.phone }}<li><i class="fas fa-tty"></i>{{ if $add_address_descriptors }}{{ i18n "phone" | printf "%s: " }}{{ end }}{{ . }}</li>{{ end }}
           </ul>
+      {{- end }}
           <ul class="social-icons">
             {{ range .Site.Params.social }}
             <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
@@ -67,7 +68,7 @@
           </ul>
         </div>
       </div>
-      {{- end }}
+
       {{ if site.Params.gmap.enable -}}
       <div class="col-md-6 col-sm-12">
         <div class="block">

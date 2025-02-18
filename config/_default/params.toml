@@ -18,7 +18,7 @@ image = "images/logo.png" # this image will be used as fallback if a page has no
 address_descriptors = false
 # contact info
 phone = ""
-email = ""
+email = "hello@katieturner.ie"
 location = """
 **Dublin**,
 Ireland
@@ -123,7 +123,7 @@ sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
 
 [[social]]
 title = "instagram"
-icon = "fab fa-instagram fa-lg" # fontawesome icon pack : https://fontawesome.com/icons/
+icon = "fab fa-instagram" # fontawesome icon pack : https://fontawesome.com/icons/
 link = "https://instagram.com/katieturner_ie"
 
 # [[social]]
