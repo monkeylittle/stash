@@ -23,17 +23,12 @@ about:
 ######################### Portfolio ###############################
 portfolio:
   enable: true
-  bg_image: "images/feature-bg-new.jpg"
   title: "FOLLOW MY JOURNEY AS I CHASE MY DREAMS"
-  content: "
-  'All you need is the plan, the road map, and the courage to press on to your destination', Earl Nightingale.
+  description: "All you need is the plan, the road map, and the courage to press on to your destination, Earl Nightingale."
+  content: "In 2025, I will continue to pursue my goals riding for Orwell Wheelers domestically while riding in the colours of WOOP Girls in Europe.
 
-
-  In 2025, I will continue to pursue my goals riding for Orwell Wheelers domestically while riding in the colours of WOOP Girls in Europe.
-
-
-  I'm very excited about my race programme in 2025 which will see me race in Ireland, UK, Denmark, Belgium, France and the Netherlands.
-  "
+  I'm very excited about my race programme in 2025 which will see me race in Ireland, UK, Denmark, Belgium, France and the Netherlands."
+  image: "images/IMG_1497.png"
   button:
     enable: true
     label: "Calendar"
