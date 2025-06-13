@@ -63,12 +63,6 @@ calendar: [
         name: "Elewijt"
       },
       {
-        date: "25nd June",
-        country: "belgium",
-        discipline: "road",
-        name: "Kuurne"
-      },
-      {
         date: "29th June",
         country: "belgium",
         discipline: "road",
