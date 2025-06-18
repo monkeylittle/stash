@@ -1,7 +1,7 @@
 ---
 title: "Upcoming Races"
 description: "Say hello or cheer from the sides, you're support is always appreciated."
-lastmod: 2025-06-13T00:00:00
+lastmod: 2025-06-18T00:00:00
 bg_image: "images/IMG_2001.jpeg"
 layout: calendar
 calendar: [
@@ -76,9 +76,35 @@ calendar: [
       },
       {
         date: "12th July",
-        country: "belgium",
+        country: "france",
         discipline: "road",
-        name: "Genk"
+        name: "Trophée de l’Aisne"
+      },
+      {
+        date: "13th July",
+        country: "france",
+        discipline: "road",
+        name: "Trophée de l’Aisne"
+      },
+      {
+        date: "14th July",
+        country: "france",
+        discipline: "road",
+        name: "Trophée de l’Aisne"
+      },
+      {
+        draft: true,
+        date: "22nd July",
+        country: "north-macedonia",
+        discipline: "road",
+        name: "European Youth Olympic Festival"
+      },
+      {
+        draft: true,
+        date: "24th July",
+        country: "north-macedonia",
+        discipline: "road",
+        name: "European Youth Olympic Festival"
       },
       {
         date: "28th July - 1st August",

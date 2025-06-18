@@ -19,6 +19,7 @@
 
         {{ $events := .events }}
         {{ range $events }}
+        {{ if not .draft }}
         <div class="row">
         <div class="col-sm-1">
           <img src="/images/flags/{{ .country }}-24px.png" alt="{{ .country }}" title="{{ .country }}">
@@ -33,6 +34,7 @@
           <p>{{ .name }}</p>
         </div>
         </div>
+        {{ end }}
         {{ end }}
         {{ end }}
       </div>
