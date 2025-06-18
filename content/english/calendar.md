@@ -75,19 +75,7 @@ calendar: [
         name: "Klimkoers Bocholtz"
       },
       {
-        date: "12th July",
-        country: "france",
-        discipline: "road",
-        name: "Trophée de l’Aisne"
-      },
-      {
-        date: "13th July",
-        country: "france",
-        discipline: "road",
-        name: "Trophée de l’Aisne"
-      },
-      {
-        date: "14th July",
+        date: "12th July - 14th July",
         country: "france",
         discipline: "road",
         name: "Trophée de l’Aisne"
