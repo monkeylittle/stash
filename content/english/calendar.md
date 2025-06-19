@@ -252,6 +252,44 @@ calendar: [
         result: 29,
       },
       {
+        date: "29.07 » 02.08",
+        country: "netherlands",
+        discipline: "road",
+        name: "Jeugdtour Assen",
+        result: 15,
+        jersey: "pink-jersey.png",
+        stages: [
+          {
+            name: "Stage 1",
+            date: "29.07",
+            result: 22,
+          },
+          {
+            name: "Stage 2",
+            date: "30.07",
+            result: 36,
+          },
+          {
+            name: "Stage 3",
+            date: "31.07",
+            result: 17,
+            jersey: "pink-jersey.png",
+          },
+          {
+            name: "Stage 4",
+            date: "01.08",
+            result: 15,
+            jersey: "pink-jersey.png",
+          },
+          {
+            name: "Stage 5",
+            date: "02.08",
+            result: 18,
+            jersey: "pink-jersey.png",
+          },
+        ]
+      },
+      {
         date: "20.10",
         country: "belgium",
         discipline: "cyclocross",
@@ -283,6 +321,43 @@ calendar: [
         discipline: "road",
         name: "Wielsbeke",
         result: 1,
+      },
+      {
+        date: "31.07 » 04.08",
+        country: "netherlands",
+        discipline: "road",
+        name: "Jeugdtour Assen",
+        result: 6,
+        jersey: "pink-jersey.png",
+        stages: [
+          {
+            name: "Stage 1",
+            date: "31.07",
+            result: 7,
+          },
+          {
+            name: "Stage 2",
+            date: "01.08",
+            result: 31,
+          },
+          {
+            name: "Stage 3",
+            date: "02.08",
+            result: 10,
+          },
+          {
+            name: "Stage 4",
+            date: "03.08",
+            result: 3,
+            jersey: "pink-jersey.png",
+          },
+          {
+            name: "Stage 5",
+            date: "04.08",
+            result: 32,
+            jersey: "pink-jersey.png",
+          },
+        ]
       },
     ],
   }

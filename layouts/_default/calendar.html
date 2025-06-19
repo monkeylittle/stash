@@ -37,6 +37,7 @@
                 <tr>
                   <th>Date</th>
                   <th>Discipline</th>
+                  <th></th>
                   <th>Result</th>
                   <th>Race</th>
                 </tr>
@@ -48,6 +49,7 @@
                 <tr>
                   <td><p>{{ .date }}</p></td>
                   <td><img src="/images/discipline/{{ .discipline }}-24px.png" alt="{{ .discipline }}" title="{{ .discipline }}"></td>
+                  <td><p>{{ if .jersey }}<img src="/images/jerseys/{{ .jersey }}"> {{ end }}</p></td>
                   <td><p>{{ .result }}</p></td>
                   <td><p><img src="/images/flags/{{ .country }}-24px.png" alt="{{ .country }}" title="{{ .country }}"> {{ .name }}</p></td>
                 </tr>
@@ -56,6 +58,7 @@
                 <tr>
                   <td><p>{{ .date }}</p></td>
                   <td></td>
+                  <td><p>{{ if .jersey }}<img src="/images/jerseys/{{ .jersey }}"> {{ end }}</p></td>
                   <td><p>{{ .result }}</p></td>
                   <td><p>- {{ .name }}</p></td>
                 </tr>
