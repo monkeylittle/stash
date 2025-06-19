@@ -13,30 +13,62 @@
       <div class="col-md-8">
         {{ $calendar := $.Page.Params.calendar }}
 
-        {{ range $calendar }}
+        <ul class="nav nav-tabs">
+          {{ $.Scratch.Set "index" 0 }}
 
-        <h2>{{ .year }} Calendar</h2>
+          {{ range $calendar }}
+          {{ $.Scratch.Set "index" (add ($.Scratch.Get "index") 1) }}
 
-        {{ $events := .events }}
-        {{ range $events }}
-        {{ if not .draft }}
-        <div class="row">
-        <div class="col-sm-1">
-          <img src="/images/flags/{{ .country }}-24px.png" alt="{{ .country }}" title="{{ .country }}">
+          {{ $index := $.Scratch.Get "index" }}
+          <li {{ if eq (int $index) 1 }} class="active" {{ end }}><a data-toggle="tab" href="#{{ .year }}">{{ .year }}</a></li>
+          {{ end }}
+        </ul>
+
+        <div class="tab-content">
+          {{ $.Scratch.Set "index" 0 }}
+
+          {{ range $calendar }}
+          {{ $.Scratch.Set "index" (add ($.Scratch.Get "index") 1) }}
+          {{ $index := $.Scratch.Get "index" }}
+
+          <div id="{{ .year }}" class="tab-pane fade {{ if eq (int $index) 1 }}in active{{ end }} table-responsive">
+            <table class="table table-condensed table-hover">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Discipline</th>
+                  <th>Result</th>
+                  <th>Race</th>
+                </tr>
+              </thead>
+              <tbody>
+              {{ $events := .events }}
+              {{ range $events }}
+              {{ if not .draft }}
+                <tr>
+                  <td><p>{{ .date }}</p></td>
+                  <td><img src="/images/discipline/{{ .discipline }}-24px.png" alt="{{ .discipline }}" title="{{ .discipline }}"></td>
+                  <td><p>{{ .result }}</p></td>
+                  <td><p><img src="/images/flags/{{ .country }}-24px.png" alt="{{ .country }}" title="{{ .country }}"> {{ .name }}</p></td>
+                </tr>
+                {{ $stages := .stages }}
+                {{ range $stages }}
+                <tr>
+                  <td><p>{{ .date }}</p></td>
+                  <td></td>
+                  <td><p>{{ .result }}</p></td>
+                  <td><p>- {{ .name }}</p></td>
+                </tr>
+                {{ end }}
+
+              {{ end }}
+              {{ end }}
+              </tbody>
+            </table>
+
+          </div>
+          {{ end }}
         </div>
-        <div class="col-sm-1">
-          <img src="/images/discipline/{{ .discipline }}-24px.png" alt="{{ .discipline }}" title="{{ .discipline }}">
-        </div>
-        <div class="col-sm-4">
-          <p>{{ .date }}</p>
-        </div>
-        <div class="col-sm-6">
-          <p>{{ .name }}</p>
-        </div>
-        </div>
-        {{ end }}
-        {{ end }}
-        {{ end }}
       </div>
     </div>
   </div>
