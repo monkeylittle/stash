@@ -23,9 +23,9 @@ calendar: [
         result: 2,
         stages: [
           {
-            name: "Stage 3",
-            date: "23.03",
-            result: 3,
+            name: "Stage 1",
+            date: "22.03",
+            result: 2,
           },
           {
             name: "Stage 2",
@@ -33,10 +33,10 @@ calendar: [
             result: 2,
           },
           {
-            name: "Stage 1",
-            date: "22.03",
-            result: 2,
-          }
+            name: "Stage 3",
+            date: "23.03",
+            result: 3,
+          },
         ]
       },
       {
@@ -47,8 +47,8 @@ calendar: [
         result: 2,
         stages: [
           {
-            name: "Stage 3",
-            date: "21.04",
+            name: "Stage 1",
+            date: "19.04",
             result: 3,
           },
           {
@@ -57,10 +57,10 @@ calendar: [
             result: 2,
           },
           {
-            name: "Stage 1",
-            date: "19.04",
+            name: "Stage 3",
+            date: "21.04",
             result: 3,
-          }
+          },
         ]
       },
       {
@@ -123,32 +123,35 @@ calendar: [
         name: "Trophée de l’Aisne",
         stages: [
           {
-            name: "Stage 3",
-            date: "14.07"
+            name: "Stage 1",
+            date: "12.07",
           },
           {
             name: "Stage 2",
-            date: "13.07"
+            date: "13.07",
           },
           {
-            name: "Stage 1",
-            date: "12.07"
-          }
+            name: "Stage 3",
+            date: "14.07",
+          },
         ]
       },
       {
         draft: true,
-        date: "22.07",
+        date: "20.07 » 25.07",
         country: "north-macedonia",
         discipline: "road",
-        name: "European Youth Olympic Festival"
-      },
-      {
-        draft: true,
-        date: "24.07",
-        country: "north-macedonia",
-        discipline: "road",
-        name: "European Youth Olympic Festival"
+        name: "European Youth Olympic Festival",
+        stages: [
+          {
+            name: "Time Trial",
+            date: "22.07",
+          },
+          {
+            name: "Road Race",
+            date: "24.07",
+          },
+        ]
       },
       {
         date: "28.07 » 01.08",
@@ -157,34 +160,131 @@ calendar: [
         name: "Jeugdtour Assen",
         stages: [
           {
-            name: "Stage 5",
-            date: "01.08"
-          },
-          {
-            name: "Stage 4",
-            date: "31.07"
-          },
-          {
-            name: "Stage 3",
-            date: "30.07"
+            name: "Stage 1",
+            date: "28.07",
           },
           {
             name: "Stage 2",
-            date: "29.07"
+            date: "29.07",
           },
           {
-            name: "Stage 1",
-            date: "28.07"
-          }
+            name: "Stage 3",
+            date: "30.07",
+          },
+          {
+            name: "Stage 4",
+            date: "31.07",
+          },
+          {
+            name: "Stage 5",
+            date: "01.08",
+          },
         ]
       },
       {
         date: "16.08 » 17.08",
         country: "ireland",
         discipline: "road",
-        name: "Youth Road National Championships"
+        name: "Youth Road National Championships",
+        stages: [
+          {
+            name: "Time Trial",
+            date: "16.08",
+          },
+          {
+            name: "Road Race",
+            date: "16.08",
+          },
+          {
+            name: "Criterium",
+            date: "17.08",
+          },
+        ]
       },
     ]
+  },
+  {
+    year: "2024",
+    events: [
+      {
+        date: "05.07 » 07.07",
+        country: "belgium",
+        discipline: "road",
+        name: "Antwerp Cycling Tour",
+        result: 2,
+        stages: [
+          {
+            name: "Balen Schoorheide",
+            date: "05.07",
+            result: 2,
+          },
+          {
+            name: "Geel Winkelomheide",
+            date: "06.07",
+            result: 2,
+          },
+          {
+            name: "Mol Millegem",
+            date: "07.07",
+            result: 4,
+          },
+        ]    
+      },
+      {
+        date: "13.07",
+        country: "belgium",
+        discipline: "road",
+        name: "Parike",
+        result: 1,
+      },
+      {
+        date: "14.07",
+        country: "belgium",
+        discipline: "road",
+        name: "Halle",
+        result: 2,
+      },
+      {
+        date: "20.07",
+        country: "belgium",
+        discipline: "road",
+        name: "Kerniel - Borgloon",
+        result: 29,
+      },
+      {
+        date: "20.10",
+        country: "belgium",
+        discipline: "cyclocross",
+        name: "Ruddervoorde",
+        result: 7,
+      },
+    ]
+  },
+  {
+    year: "2023",
+    events: [
+      {
+        date: "15.07",
+        country: "belgium",
+        discipline: "road",
+        name: "Krombeke-centrum",
+        result: 2,
+      },
+      {
+        date: "16.07",
+        country: "belgium",
+        discipline: "road",
+        name: "Zwartberg - Genk",
+        result: 2,
+      },
+      {
+        date: "23.07",
+        country: "belgium",
+        discipline: "road",
+        name: "Wielsbeke",
+        result: 1,
+      },
+    ],
   }
 ]
 draft: false
