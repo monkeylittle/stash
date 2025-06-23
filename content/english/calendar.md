@@ -89,32 +89,33 @@ calendar: [
         country: "belgium",
         discipline: "road",
         name: "GP Niels Albert",
-        result: 40
+        result: 40,
       },
       {
         date: "15.06",
         country: "belgium",
         discipline: "road",
         name: "Wetterenten Ede",
-        result: DNF
+        result: DNF,
       },
       {
         date: "22.06",
         country: "belgium",
         discipline: "road",
-        name: "Elewijt"
+        name: "Elewijt",
+        result: DNF,
       },
       {
-        date: "29.06",
+        date: "28.06",
         country: "belgium",
         discipline: "road",
-        name: "Wingene St Jan"
+        name: "Tielt-Winge",
       },
       {
         date: "06.07",
         country: "netherlands",
         discipline: "road",
-        name: "Klimkoers Bocholtz"
+        name: "Klimkoers Bocholtz",
       },
       {
         date: "12.07 » 14.07",
