@@ -110,6 +110,7 @@ calendar: [
         country: "belgium",
         discipline: "road",
         name: "Tielt-Winge",
+        result: 18,
       },
       {
         date: "06.07",
