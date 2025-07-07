@@ -64,6 +64,13 @@ calendar: [
         ]
       },
       {
+        date: "26.04",
+        country: "belgium",
+        discipline: "road",
+        name: "Gullegemse Jeugdkoers",
+        result: 28,
+      },
+      {
         date: "03.05 » 04.05",
         country: "ireland",
         discipline: "road",
