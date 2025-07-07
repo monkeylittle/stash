@@ -64,6 +64,30 @@ calendar: [
         ]
       },
       {
+        date: "03.05 » 04.05",
+        country: "ireland",
+        discipline: "road",
+        name: "Kanturk 3 Day",
+        result: 2,
+        stages: [
+          {
+            name: "Stage 1",
+            date: "03.05",
+            result: 2,
+          },
+          {
+            name: "Stage 2",
+            date: "03.05",
+            result: 2,
+          },
+          {
+            name: "Stage 3",
+            date: "04.05",
+            result: 3,
+          },
+        ]
+      },
+      {
         date: "11.05",
         country: "belgium",
         discipline: "road",
