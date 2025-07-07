@@ -329,6 +329,31 @@ calendar: [
     year: "2023",
     events: [
       {
+        date: "29.04 » 30.04",
+        country: "ireland",
+        discipline: "road",
+        name: "Kanturk 3 Day",
+        result: 1,
+        jersey: "pink-jersey.png",
+        stages: [
+          {
+            name: "Stage 1",
+            date: "29.04",
+            result: 1,
+          },
+          {
+            name: "Stage 2",
+            date: "29.04",
+            result: 1,
+          },
+          {
+            name: "Stage 3",
+            date: "30.04",
+            result: 2,
+          },
+        ]
+      },
+      {
         date: "15.07",
         country: "belgium",
         discipline: "road",
