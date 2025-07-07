@@ -95,6 +95,28 @@ calendar: [
         result: 11
       },
       {
+        date: "18.05",
+        country: "ireland",
+        discipline: "road",
+        name: "Carlow Youth Races",
+        result: 1,
+        jersey: "yellow-jersey.png",
+        stages: [
+          {
+            name: "Stage 1",
+            date: "18.05",
+            result: 1,
+            jersey: "yellow-jersey.png",
+          },
+          {
+            name: "Stage 2",
+            date: "18.05",
+            result: 2,
+            jersey: "yellow-jersey.png",
+          },
+        ]
+      },
+      {
         date: "25.05",
         country: "belgium",
         discipline: "road",
