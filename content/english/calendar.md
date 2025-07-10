@@ -193,7 +193,6 @@ calendar: [
         ]
       },
       {
-        draft: true,
         date: "20.07 » 25.07",
         country: "north-macedonia",
         discipline: "road",
