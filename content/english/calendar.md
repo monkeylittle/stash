@@ -177,18 +177,22 @@ calendar: [
         country: "france",
         discipline: "road",
         name: "Trophée de l’Aisne",
+        result: 2,
         stages: [
           {
             name: "Stage 1",
             date: "12.07",
+            result: 5,
           },
           {
             name: "Stage 2",
             date: "13.07",
+            result: 3,
           },
           {
             name: "Stage 3",
             date: "14.07",
+            result: 1,
           },
         ]
       },
