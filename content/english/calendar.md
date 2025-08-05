@@ -1,7 +1,7 @@
 ---
 title: "Upcoming Races"
 description: "Say hello or cheer from the sides, you're support is always appreciated."
-lastmod: 2025-07-16T00:00:00
+lastmod: 2025-08-05T00:00:00
 bg_image: "images/IMG_2001.jpeg"
 layout: calendar
 calendar: [
@@ -205,10 +205,12 @@ calendar: [
           {
             name: "Time Trial",
             date: "22.07",
+            result: 59,
           },
           {
             name: "Road Race",
             date: "24.07",
+            result: 60,
           },
         ]
       },
@@ -217,26 +219,32 @@ calendar: [
         country: "netherlands",
         discipline: "road",
         name: "Jeugdtour Assen",
+        result: "DNF",
         stages: [
           {
             name: "Stage 1",
             date: "28.07",
+            result: 21,
           },
           {
             name: "Stage 2",
             date: "29.07",
+            result: 26,
           },
           {
             name: "Stage 3",
             date: "30.07",
+            result: 20,
           },
           {
             name: "Stage 4",
             date: "31.07",
+            result: "DNS",
           },
           {
             name: "Stage 5",
             date: "01.08",
+            result: "DNS",
           },
         ]
       },
