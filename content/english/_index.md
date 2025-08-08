@@ -7,7 +7,7 @@ banner:
   title: "On the journey to becoming a pro athlete."
   content: "There are no secrets to success. It is the result of preparation, hard work, and learning from failure."
   button:
-    enable: true
+    enable: false
     label: "Support my Journey"
     link: "contact/"
 
