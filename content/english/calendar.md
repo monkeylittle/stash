@@ -257,14 +257,17 @@ calendar: [
           {
             name: "Time Trial",
             date: "16.08",
+            result: 1
           },
           {
             name: "Road Race",
             date: "16.08",
+            result: 1
           },
           {
             name: "Criterium",
             date: "17.08",
+            result: 2
           },
         ]
       },
