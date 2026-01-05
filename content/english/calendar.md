@@ -6,6 +6,18 @@ bg_image: "images/IMG_2001.jpeg"
 layout: calendar
 calendar: [
   {
+    year: "2026",
+    events: [
+      {
+        date: "04.01",
+        country: "ireland",
+        discipline: "cyclocross",
+        name: "Cyclocross National Series",
+        result: 1
+      },    
+    ]
+  },
+  {
     year: "2025",
     events: [
       {
