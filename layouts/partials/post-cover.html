@@ -1,0 +1,11 @@
+{{- /* Cover image path (relative to assets/img/) for a news post: explicit `image`, else the first photo of its event. */ -}}
+{{- $cover := .Params.image | default "" -}}
+{{- with .Params.photos -}}
+  {{- $p := . -}}
+  {{- if not $cover -}}
+    {{- range partial "gallery-items.html" site -}}
+      {{- if and (not $cover) (strings.HasPrefix (path.Base .src) $p) }}{{ $cover = .src }}{{ end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $cover -}}

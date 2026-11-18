@@ -1,0 +1,4 @@
+{{- /* URL of one resized (max width) webp. Args: src, width */ -}}
+{{- $r := resources.Get (printf "img/%s" .src) -}}
+{{- if not $r }}{{ errorf "Image not found: assets/img/%s" .src }}{{ end -}}
+{{- if or (eq $r.MediaType.SubType "svg") (le $r.Width .width) -}}{{ $r.RelPermalink }}{{- else -}}{{ ($r.Resize (printf "%dx webp q85" .width)).RelPermalink }}{{- end -}}

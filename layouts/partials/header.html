@@ -1,0 +1,10 @@
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="/">Katie Turner</a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">Menu</button>
+    <nav class="nav">
+      {{ $cur := . }}
+      {{ range site.Menus.main }}<a href="{{ .URL }}"{{ if or ($cur.RelPermalink | hasPrefix .URL) }} class="active"{{ end }}>{{ .Name }}</a>{{ end }}
+    </nav>
+  </div>
+</header>

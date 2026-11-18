@@ -1,0 +1,14 @@
+{{- /* Gallery photos from assets/img/gallery/, newest first (file names start YYYY_MM_DD_).
+       data/gallery.yaml is optional: an entry with a matching `src` overrides alt/caption. */ -}}
+{{- $meta := dict -}}
+{{- range site.Data.gallery }}{{ $meta = merge $meta (dict .src .) }}{{ end -}}
+{{- $items := slice -}}
+{{- range sort (where (resources.Match "img/gallery/*") "ResourceType" "image") "Name" "desc" -}}
+  {{- $file := path.Base .Name -}}
+  {{- if not (findRE `_hu\d+\.` $file) -}}
+  {{- $default := $file | replaceRE `\.[^.]+$` "" | replaceRE `^\d{4}[-_]\d{2}[-_]\d{2}[-_]` "" | replaceRE "_" " " | title -}}
+  {{- $m := index $meta $file | default dict -}}
+  {{- $items = $items | append (dict "ratio" (printf "%.3f" (div (float .Width) .Height)) "src" (printf "gallery/%s" $file) "alt" ($m.alt | default $default) "caption" ($m.caption | default $default) "key" ($file | replaceRE `_(\d)\.` "_0${1}." | replaceRE `^(\d{4})[-_](\d{2})[-_](\d{2})` "${1}_${2}_${3}")) -}}
+{{- end -}}
+{{- end -}}
+{{- return (sort $items "key" "desc") -}}

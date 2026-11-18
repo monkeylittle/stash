@@ -1,151 +1,55 @@
 {{ define "main" }}
-
-<!-- banner -->
-{{ with .Params.banner }}
-{{ if .enable }}
-<section class="slider {{ if .bg_overlay }}overly{{ end }}" style="background-image: url('{{ .bg_image | relURL }}');">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          {{ with .title }}<h1>{{ . | markdownify }}</h1>{{ end }}
-          {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
-          {{ with .button }}
-          {{ if .enable }}
-          <a href="{{ .link | relLangURL }}" class="btn btn-main animated fadeInUp">{{ .label }}</a>
-          {{ end }}
-          {{ end }}
-        </div>
-      </div>
+<section class="hero">
+  <div class="hero-photo">{{ partial "img.html" (dict "src" "gallery/2025_06_08_eyof_media_day_11.png" "alt" "Katie Turner holding up a wheel" "sizes" "(max-width:760px) 100vw, 62vw" "eager" true) }}</div>
+  <div class="shade"></div>
+  <div class="wrap">
+    <p class="eyebrow light">{{ site.Params.tagline }}</p>
+    <h1>{{ .Params.headline }}</h1>
+    <p class="lead light">{{ .Params.intro }}</p>
+    <div class="cta">
+      <a class="btn" href="/sponsors/">Partner with me</a>
+      <a class="btn ghost" href="/about/">About me</a>
     </div>
   </div>
 </section>
-{{ end }}
-{{ end }}
-<!-- /banner -->
 
-<!-- about -->
-{{ with .Params.about }}
-{{ if .enable }}
-<section class="about section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-7 col-sm-12">
-        <div class="block">
-          <div class="section-title">
-            {{ with .title }}<h2>{{ . | markdownify }}</h2>{{ end }}
-            {{ with .description }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
-          </div>
-          {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
-        </div>
-      </div>
-      <div class="col-md-5 col-sm-12">
-        <div class="block">
-          <img src="{{ .image | relURL }}" class="img-responsive" alt="Img">
-        </div>
-      </div>
-    </div>
+<section class="stats wrap">
+  {{ range .Params.stats }}<div><span class="num">{{ .value }}</span><span>{{ .label }}</span></div>{{ end }}
+</section>
+
+<section class="section wrap split">
+  {{ partial "img.html" (dict "src" "gallery/2025_06_08_eyof_media_day_1.png" "alt" "Katie Turner in her Ireland kit, holding her helmet" "sizes" "(max-width:760px) 100vw, 540px") }}
+  <div>
+    <p class="eyebrow">The rider</p>
+    <h2>From the park races to the world stage</h2>
+    <p>I began at the Sunday morning youth sessions in Corkagh Park, chasing the older riders round the course. Now I race on the road, the track and in the mud, pull on the Ireland jersey and travel abroad to take on the best young riders in Europe. I’m only getting started.</p>
+    <a class="btn dark" href="/about/">Read my story</a>
   </div>
 </section>
-{{ end }}
-{{ end }}
-<!-- /about -->
 
-<!-- portfolio -->
-{{ with .Params.portfolio }}
-{{ if .enable }}
-<section class="feature">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-5 col-sm-12 hidden-xs">
-        <div class="block">
-          <img src="{{ .image | relURL }}" class="img-responsive" alt="Img">
-        </div>
-      </div>
-      <div class="col-md-7 col-sm-12">
-        <div class="block">
-          <div class="section-title">
-            {{ with .title }}<h2>{{ . | markdownify }}</h2>{{ end }}
-            {{ with .description }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
-          </div>
-          {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
-          {{ with .button }}
-          {{ if .enable }}
-          <a href="{{ .link | relLangURL }}" class="btn btn-view-works">{{ .label }}</a>
-          {{ end }}
-          {{ end }}
-        </div>
-      </div>
-      <div class="col-md-5 col-sm-12 visible-xs">
-        <div class="block">
-          <img src="{{ .image | relURL }}" class="img-responsive" alt="Img">
-        </div>
-      </div>
-    </div>
+{{ partial "sponsor-strip.html" . }}
+
+<section class="section wrap">
+  <div class="head"><h2>Latest news</h2><a href="/news/">All news</a></div>
+  <div class="cards">
+    {{ range first 3 (where site.RegularPages "Section" "news").ByDate.Reverse }}{{ partial "card.html" . }}{{ end }}
   </div>
 </section>
-{{ end }}
-{{ end }}
-<!-- /portfolio -->
 
-<!-- service -->
-{{ if .Params.service.enable }}
-{{ partial "service.html" . }}
-{{ end }}
-<!-- /service -->
-
-<!-- call to action -->
-{{ if .Params.cta.enable }}
-{{ partial "cta.html" . }}
-{{ end }}
-<!-- /call to action -->
-
-<!-- funfacts -->
-{{ with .Params.funfacts }}
-{{ if .enable }}
-<section class="testimonial">
-  <div class="container">
-    <div class="row">
-      <div class="section-title text-center">
-        {{ with .title }}<h2>{{ . | markdownify }}</h2>{{ end }}
-        {{ with .description }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="block">
-          <ul class="counter-box clearfix">
-            {{ range .funfact_item }}
-            <li class="counter-item">
-              <i class="{{ .icon }}"></i>
-              <h4 class="count" data-count="{{ .count }}">0</h4>
-              <span>{{ .name | markdownify }}</span>
-            </li>
-            {{ end }}
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-5 col-md-offset-1">
-        <div class="testimonial-carousel text-center">
-          <div class="testimonial-slider owl-carousel">
-            {{ range .testimonial_slider }}
-            <div>
-              <i class="fas fa-quote-left"></i>
-              {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
-              <div class="user">
-                <img src="{{ .image | relURL }}" alt="client">
-                <p><span>{{ .name | markdownify }}</span> {{ .designation | markdownify }}</p>
-              </div>
-            </div>
-            {{ end }}
-          </div>
-        </div>
-      </div>
-    </div>
+<section class="section wrap">
+  <div class="head"><h2>Gallery</h2><a href="/gallery/">See more</a></div>
+  <div class="mini-grid">
+    {{ range first 4 (partial "gallery-items.html" .) }}{{ partial "img.html" (dict "src" .src "alt" .alt "sizes" "(max-width:760px) 50vw, 270px") }}{{ end }}
   </div>
 </section>
-{{ end }}
-{{ end }}
-<!-- /funfacts -->
 
+<section class="band band-photo">
+  <div class="hero-photo">{{ partial "img.html" (dict "src" "gallery/2025_06_08_eyof_media_day_7.png" "alt" "Katie Turner pointing at the camera" "sizes" "(max-width:760px) 100vw, 48vw") }}</div>
+  <div class="shade"></div>
+  <div class="wrap">
+    <h2>Want your brand on the start line?</h2>
+    <p>Back the next generation of Irish cycling and come along for the ride, from the first race of the season to the last, on the road, on the track and in the mud.</p>
+    <a class="btn" href="/contact/">Talk to me</a>
+  </div>
+</section>
 {{ end }}

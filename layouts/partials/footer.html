@@ -1,25 +1,14 @@
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="footer-menu">
-          <ul>
-            {{ range site.Menus.footer }}
-            <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
-            {{ end }}
-          </ul>
-        </div>
-        <div class="footer-menu">
-          <ul>
-            {{ range .Site.Params.social }}
-            <!-- <li><a href="{{ .link | relLangURL }}">{{ .title }}</a></li> -->
-            <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
-
-            {{ end }}
-          </ul>
-        </div>
-        <p class="copyright">{{ site.Params.copyright | markdownify }}</p>
-      </div>
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <strong>Katie Turner</strong>
+      <p>{{ site.Params.tagline }}</p>
     </div>
+    <div class="links">
+      <a href="{{ site.Params.instagram }}">Instagram</a>
+      <a href="{{ site.Params.strava }}">Strava</a>
+      <a href="mailto:{{ site.Params.email }}">Email</a>
+    </div>
+    <p class="small">&copy; {{ now.Year }} Katie Turner</p>
   </div>
 </footer>

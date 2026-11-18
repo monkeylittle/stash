@@ -1,0 +1,25 @@
+{{ define "main" }}
+{{ partial "page-hero.html" (dict "title" .Title "lead" .Params.lead "src" "gallery/2025-07-14_Trophée_de_l’Aisne_3.png" "alt" "Katie Turner leading the bunch at the Trophée de l’Aisne") }}
+<section class="wrap prose">{{ .Content }}</section>
+{{ range site.Data.tiers }}
+  {{ $tier := . }}
+  {{ $in := where site.Data.sponsors "tier" .name }}
+  {{ if $in }}
+  <section class="wrap section tier-section">
+    <h2 class="tier">{{ .name }}s</h2>
+    <div class="sponsor-grid {{ if $tier.compact }}small{{ end }}">
+      {{ range $in }}
+      <a class="sponsor" href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+        <img src="{{ .logo }}" alt="{{ .name }}">
+        {{ with .blurb }}<p>{{ . }}</p>{{ end }}
+      </a>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
+<section class="band"><div class="wrap">
+  <h2>Become a partner</h2>
+  <a class="btn" href="/contact/">Get in touch</a>
+</div></section>
+{{ end }}

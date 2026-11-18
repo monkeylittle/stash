@@ -1,0 +1,20 @@
+{{- /* Responsive image from assets/img/. Args: src, alt, sizes, class, eager */ -}}
+{{- $r := resources.Get (printf "img/%s" .src) -}}
+{{- if not $r }}{{ errorf "Image not found: assets/img/%s" .src }}{{ end -}}
+{{- $cls := .class | default "" -}}
+{{- $load := cond (.eager | default false) "eager" "lazy" -}}
+{{- if eq $r.MediaType.SubType "svg" -}}
+<img src="{{ $r.RelPermalink }}" alt="{{ .alt }}" class="{{ $cls }}" loading="{{ $load }}">
+{{- else -}}
+{{- $set := slice -}}
+{{- $mid := $r -}}
+{{- range slice 480 960 1600 -}}
+  {{- if lt . $r.Width -}}
+    {{- $s := $r.Resize (printf "%dx webp q80" .) -}}
+    {{- $set = $set | append (printf "%s %dw" $s.RelPermalink .) -}}
+    {{- if eq . 960 }}{{ $mid = $s }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+{{- $set = $set | append (printf "%s %dw" ($r.Resize (printf "%dx webp q80" (cond (lt $r.Width 1600) $r.Width 1600))).RelPermalink (cond (lt $r.Width 1600) $r.Width 1600)) -}}
+<img src="{{ $mid.RelPermalink }}" srcset="{{ delimit $set ", " }}" sizes="{{ .sizes | default "100vw" }}" width="{{ $mid.Width }}" height="{{ $mid.Height }}" alt="{{ .alt }}" class="{{ $cls }}" loading="{{ $load }}">
+{{- end -}}

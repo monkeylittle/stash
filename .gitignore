@@ -3,3 +3,11 @@
 public
 .hugo_build.lock
 hugo_stats.json
+
+# Claude Code
+.claude/
+CLAUDE.md
+resources
+
+# Old theme (no longer used)
+themes/

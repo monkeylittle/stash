@@ -1,0 +1,6 @@
+{{ define "main" }}
+{{ partial "page-hero.html" (dict "title" .Title "lead" (.Params.lead | default "") "src" "gallery/2025_06_08_eyof_media_day_5.png" "alt" "Katie Turner at the EYOF media day" "blend" true "pos" "22%") }}
+<section class="wrap section"><div class="cards">
+  {{ range .Pages.ByDate.Reverse }}{{ partial "card.html" . }}{{ end }}
+</div></section>
+{{ end }}

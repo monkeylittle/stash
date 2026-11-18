@@ -1,0 +1,31 @@
+- name: Arkwood Construction
+  tier: Season partner
+  logo: /img/sponsors/arkwood-construction.png
+  url: "https://arkwood.ie"
+  blurb: "Arkwood is a Dublin building company, established in 1995, specialising in complete home refurbishments, open plan kitchen extensions and sunrooms. They’ve built their name on quality, reliability and word of mouth, and they back me for the same reasons: hard work, commitment and a long-term view. I’m proud to have them as a season partner."
+# Placeholder sponsors, hidden until real sponsors are added. Uncomment or replace to show them.
+# - name: Sponsor Two
+#   tier: Season partner
+#   logo: /img/sponsors/2.svg
+#   url: "#"
+#   blurb: Placeholder text describing how this partner supports me and why they are involved.
+# - name: Sponsor Three
+#   tier: Campaign partner
+#   logo: /img/sponsors/3.svg
+#   url: "#"
+#   blurb: Placeholder text for a campaign partner.
+# - name: Sponsor Four
+#   tier: Campaign partner
+#   logo: /img/sponsors/4.svg
+#   url: "#"
+#   blurb: Placeholder text for a campaign partner.
+# - name: Sponsor Five
+#   tier: Supporter
+#   logo: /img/sponsors/5.svg
+#   url: "#"
+#   blurb: ""
+# - name: Sponsor Six
+#   tier: Supporter
+#   logo: /img/sponsors/6.svg
+#   url: "#"
+#   blurb: ""

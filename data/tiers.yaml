@@ -1,0 +1,5 @@
+# Partnership tiers, in display order. `name` must match the `tier:` of entries in sponsors.yaml.
+- name: Season partner
+- name: Campaign partner
+- name: Supporter
+  compact: true

@@ -1,0 +1,8 @@
+{{- /* args: title, lead, src (relative to assets/img/), alt, blend (true for photos with a black background), shift (optional right offset of the photo, e.g. "-15%" pushes it further right and crops its right edge), fade (optional width of the left fade, default "55%"; smaller keeps more of the photo visible), pos (optional vertical crop, e.g. "40%"; higher moves the photo up), pos (optional object-position) */ -}}
+<section class="page-hero{{ if .blend }} blend{{ end }}"{{ if or .pos .fade .shift }} style="{{ with .pos }}--pos:{{ . }};{{ end }}{{ with .fade }}--fade:{{ . }};{{ end }}{{ with .shift }}--shift:{{ . }}{{ end }}"{{ end }}>
+  <div class="hero-photo">{{ partial "img.html" (dict "src" .src "alt" .alt "sizes" "(max-width:760px) 100vw, 60vw" "eager" true) }}</div>
+  <div class="shade"></div>
+  <div class="wrap">
+    <h1>{{ .title }}</h1>{{ with .lead }}<p class="lead light">{{ . }}</p>{{ end }}
+  </div>
+</section>

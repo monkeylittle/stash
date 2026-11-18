@@ -1,0 +1,8 @@
+<section class="strip">
+  <div class="wrap">
+    <p class="eyebrow">Proudly supported by</p>
+    <div class="logos">
+      {{ range site.Data.sponsors }}<a href="{{ .url }}" title="{{ .name }}" target="_blank" rel="noopener noreferrer"><img src="{{ .logo }}" alt="{{ .name }}" loading="lazy"></a>{{ end }}
+    </div>
+  </div>
+</section>

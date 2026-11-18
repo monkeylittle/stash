@@ -1,0 +1,20 @@
+{{ define "main" }}
+{{ with .Params.hero }}{{ partial "page-hero.html" (dict "title" $.Title "lead" ($.Params.lead | default "") "src" . "alt" ($.Params.heroAlt | default "") "blend" $.Params.heroBlend "pos" $.Params.heroPos "fade" $.Params.heroFade "shift" $.Params.heroShift) }}{{ else }}<section class="page-head"><div class="wrap">
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.lead }}<p class="lead">{{ . }}</p>{{ end }}
+</div></section>{{ end }}
+<article class="wrap prose">
+  
+  {{ if .Date }}{{ if eq .Section "news" }}<time>{{ .Date.Format "2 January 2006" }}</time>{{ end }}{{ end }}
+  {{ .Content }}
+</article>
+{{ with .Params.photos }}{{ $p := . }}
+<section class="wrap post-photos">
+  <div class="masonry">
+    {{ range partial "gallery-items.html" site }}{{ if strings.HasPrefix (path.Base .src) $p }}<a style="--r:{{ .ratio }};flex-grow:{{ mul (float .ratio) 100 }};flex-basis:{{ mul (float .ratio) 220 }}px" href="{{ partial "img-url.html" (dict "src" .src "width" 2000) }}" data-caption="{{ .caption }}">{{ partial "img.html" (dict "src" .src "alt" .alt "sizes" "(max-width:760px) 100vw, 360px") }}</a>{{ end }}{{ end }}
+  </div>
+</section>
+{{ partial "lightbox.html" . }}
+{{ end }}
+{{ if eq .Section "news" }}{{ else }}{{ partial "sponsor-strip.html" . }}{{ end }}
+{{ end }}

@@ -1,0 +1,9 @@
+{{ define "main" }}
+{{ partial "page-hero.html" (dict "title" .Title "lead" .Params.lead "src" "gallery/2026_11_07_monsters_of_track_round1_1.png" "alt" "Katie Turner racing at Monsters of Track, Round 1") }}
+<section class="wrap section">
+  <div class="masonry">
+    {{ range (partial "gallery-items.html" .) }}<a style="--r:{{ .ratio }};flex-grow:{{ mul (float .ratio) 100 }};flex-basis:{{ mul (float .ratio) 220 }}px" href="{{ partial "img-url.html" (dict "src" .src "width" 2000) }}" data-caption="{{ .caption }}">{{ partial "img.html" (dict "src" .src "alt" .alt "sizes" "(max-width:760px) 100vw, 360px") }}</a>{{ end }}
+  </div>
+</section>
+{{ partial "lightbox.html" . }}
+{{ end }}
