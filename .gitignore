@@ -11,3 +11,8 @@ resources
 
 # Old theme (no longer used)
 themes/
+
+# Local tests
+node_modules/
+.test-site/
+test-results/

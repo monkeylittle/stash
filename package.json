@@ -1,0 +1,14 @@
+{
+  "name": "katieturner-ie-tests",
+  "private": true,
+  "description": "Local-only browser tests. Not run by CI.",
+  "scripts": {
+    "test": "playwright test",
+    "test:iphone": "playwright test --project=iphone",
+    "test:headed": "playwright test --headed",
+    "test:setup": "playwright install webkit chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.49.1"
+  }
+}
