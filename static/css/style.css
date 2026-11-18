@@ -11,7 +11,7 @@ h1{font-size:clamp(2.4rem,6vw,4.6rem);font-weight:800}h2{font-size:clamp(1.7rem,
 .btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(228,87,46,.35)}
 .btn.ghost{background:transparent;border-color:#fff}.btn.dark{background:var(--ink);border-color:var(--ink)}
 .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.site-header{position:absolute;inset:0 0 auto;z-index:10}body:not(.home) .site-header{position:static;background:var(--ink)}
+.site-header{position:absolute;inset:0 0 auto;z-index:10}body:not(.home) .site-header{position:relative;background:var(--ink)}
 .bar{display:flex;align-items:center;justify-content:space-between;height:72px}
 .brand{font:800 1.3rem Fraunces,serif;color:#fff;text-decoration:none}
 .nav{display:flex;gap:26px}.nav a{color:#fff;text-decoration:none;font-weight:500;font-size:.95rem;opacity:.85}.nav a:hover,.nav a.active{opacity:1;text-decoration:underline;text-underline-offset:6px;text-decoration-color:var(--accent)}
