@@ -6,11 +6,15 @@ const links=[...document.querySelectorAll('.masonry a')],
  img=lb.querySelector('.lb-stage img'),cap=lb.querySelector('.lb-cap'),strip=lb.querySelector('.lb-strip'),
  prev=lb.querySelector('.lb-prev'),next=lb.querySelector('.lb-next');
 let cur=0;
-const thumbs=links.map((a,i)=>{
- const th=a.querySelector('img'),b=document.createElement('button');
- b.type='button';b.className='lb-thumb';b.setAttribute('aria-label','Photo '+(i+1)+' of '+links.length);
- const t=document.createElement('img');t.src=th?(th.currentSrc||th.src):a.href;t.alt='';t.loading='lazy';b.appendChild(t);
- b.addEventListener('click',()=>show(i));strip.appendChild(b);return b});
+// Thumbnails are built on first open (and use small data-thumb files), so merely loading
+// the page doesn't fetch a second copy of every photo.
+let thumbs=null;
+function build(){
+ thumbs=links.map((a,i)=>{
+  const th=a.querySelector('img'),b=document.createElement('button');
+  b.type='button';b.className='lb-thumb';b.setAttribute('aria-label','Photo '+(i+1)+' of '+links.length);
+  const t=document.createElement('img');t.src=a.dataset.thumb||(th&&th.src)||a.href;t.alt='';t.loading='lazy';b.appendChild(t);
+  b.addEventListener('click',()=>show(i));strip.appendChild(b);return b})}
 function show(i){
  cur=(i+links.length)%links.length;
  const a=links[cur],th=a.querySelector('img');
@@ -18,7 +22,7 @@ function show(i){
  cap.textContent=(a.dataset.caption||'')+(links.length>1?(a.dataset.caption?'  ·  ':'')+(cur+1)+' / '+links.length:'');
  thumbs.forEach((b,k)=>{b.classList.toggle('on',k===cur);b.setAttribute('aria-current',k===cur?'true':'false')});
  thumbs[cur].scrollIntoView({block:'nearest',inline:'center',behavior:'smooth'})}
-function open(i){lb.hidden=false;document.body.style.overflow='hidden';show(i)}
+function open(i){if(!thumbs)build();lb.hidden=false;document.body.style.overflow='hidden';show(i)}
 function close(){lb.hidden=true;document.body.style.overflow='';img.removeAttribute('src')}
 links.forEach((a,i)=>a.addEventListener('click',e=>{e.preventDefault();open(i)}));
 if(links.length<2){prev.hidden=next.hidden=true;strip.hidden=true}
