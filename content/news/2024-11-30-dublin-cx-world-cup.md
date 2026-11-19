@@ -4,7 +4,8 @@ date: 2024-11-30
 photos: "2024_11_30_"
 hero: "gallery/2024_11_30_dublin_cx_world_cup_3.jpg"
 heroAlt: "Katie Turner descending a muddy slope at the Dublin Cyclocross World Cup, November 2024"
-heroPos: "12%"
+heroPos: "26%"
+heroShift: "-8%"
 heroFade: "30%"
 ---
 I won the Under 16 girls race at the Dublin Cyclocross World Cup support races on Saturday 30 November 2024. It was a brilliant way to be part of a World Cup weekend.
