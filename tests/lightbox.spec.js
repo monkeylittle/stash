@@ -32,3 +32,18 @@ test('news report photo strip opens the viewer', async ({ page, isMobile }) => {
   await expect(page.locator('.lightbox')).toBeVisible();
   if (!isMobile) { await page.keyboard.press('Escape'); await expect(page.locator('.lightbox')).toBeHidden(); }
 });
+
+test('photo credit shows on its own line under the caption', async ({ page, isMobile }) => {
+  await page.goto('/gallery/');
+  const credited = page.locator('.masonry a[data-credit]:not([data-credit=""])').first();
+  expect(await page.locator('.masonry a[data-credit]:not([data-credit=""])').count()).toBeGreaterThan(0);
+  await (isMobile ? credited.tap() : credited.click());
+  const cap = page.locator('.lb-cap');
+  const credit = cap.locator('.lb-credit');
+  await expect(credit).toContainText('Photo:');
+  const [c, k] = await Promise.all([cap.boundingBox(), credit.boundingBox()]);
+  // the credit sits below the first line of caption text
+  expect(k.y).toBeGreaterThan(c.y + 10);
+  const text = await cap.evaluate(el => el.firstChild.textContent);
+  expect(text).not.toContain('Photo:');
+});

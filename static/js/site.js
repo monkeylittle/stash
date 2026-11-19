@@ -20,6 +20,7 @@ function show(i){
  const a=links[cur],th=a.querySelector('img');
  img.src=a.href;img.alt=th?th.alt:'';
  cap.textContent=(a.dataset.caption||'')+(links.length>1?(a.dataset.caption?'  ·  ':'')+(cur+1)+' / '+links.length:'');
+ if(a.dataset.credit){const c=document.createElement('span');c.className='lb-credit';c.textContent=a.dataset.credit;cap.appendChild(c)}
  thumbs.forEach((b,k)=>{b.classList.toggle('on',k===cur);b.setAttribute('aria-current',k===cur?'true':'false')});
  thumbs[cur].scrollIntoView({block:'nearest',inline:'center',behavior:'smooth'})}
 function open(i){if(!thumbs)build();lb.hidden=false;document.body.style.overflow='hidden';show(i)}

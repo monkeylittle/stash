@@ -59,7 +59,7 @@ h1{font-size:clamp(2.4rem,6vw,4.6rem);font-weight:var(--hw)}h2{font-size:clamp(1
 .lb-stage img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;border-radius:8px}
 .lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;border:0;background:rgba(255,255,255,.14);color:#fff;font-size:2.2rem;line-height:1;cursor:pointer;padding:0 0 4px}
 .lb-nav:hover{background:rgba(255,255,255,.28)}.lb-prev{left:14px}.lb-next{right:14px}.lb-nav[hidden]{display:none}
-.lb-cap{flex:none;margin:0;padding:8px 16px 16px;text-align:center;color:#dfe3ef;font-size:.95rem}
+.lb-credit{display:block;margin-top:2px;font-size:.8rem;opacity:.7}.lb-cap{flex:none;margin:0;padding:8px 16px 16px;text-align:center;color:#dfe3ef;font-size:.95rem}
 .form{display:grid;gap:16px}.form label{display:grid;gap:6px;font-weight:500}.form input,.form select,.form textarea{font:inherit;padding:12px;border:1px solid #cfd4e0;border-radius:10px}
 .small{font-size:.85rem;color:var(--muted)}
 .site-footer{background:var(--ink);color:#dfe3ef;padding:48px 0;margin-top:0}.site-footer .wrap{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between}.site-footer .links{display:flex;gap:20px}.site-footer p{margin:4px 0}
