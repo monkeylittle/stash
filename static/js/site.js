@@ -37,3 +37,9 @@ let x0=null;
 lb.addEventListener('touchstart',e=>{x0=e.touches[0].clientX},{passive:true});
 lb.addEventListener('touchend',e=>{if(x0===null)return;const dx=e.changedTouches[0].clientX-x0;x0=null;if(Math.abs(dx)>50)show(cur+(dx<0?1:-1))});
 }
+// YouTube videos/Shorts: the player (and any Google request) loads only when tapped.
+document.querySelectorAll('.yt-play').forEach(b=>b.addEventListener('click',()=>{
+ const f=document.createElement('iframe');
+ f.src='https://www.youtube-nocookie.com/embed/'+b.dataset.yt+'?autoplay=1&playsinline=1&rel=0';
+ f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;f.title=b.getAttribute('aria-label').replace('Play video: ','');
+ const w=document.createElement('div');w.className='yt-play on';w.appendChild(f);b.replaceWith(w)}));
