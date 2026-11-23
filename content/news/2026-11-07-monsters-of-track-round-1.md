@@ -11,8 +11,8 @@ I was so excited to be on the track for Round 1 of the 2026 Monsters of Track se
 
 I was riding up in the women’s category, which made it an even better chance to learn. The racing is faster, sharper and more tactical, and you have to be switched on every lap. There were four races on the schedule: a scratch, an elimination, a points race and a second scratch.
 
-The morning went better than I could have hoped. I won the first two races, the scratch and the elimination, and I could not stop smiling.  Two results I can be really proud of given the quality in the field. The afternoon was tougher as the travelling caught up with me and I started to feel the fatigue in my legs. In the afternoon I finished fifth in the points race and sixth in the final scratch.
+The morning went better than I could have hoped. I won the first two races, the scratch and the elimination, and I could not stop smiling. Two results I can be really proud of given the quality in the field. The afternoon was tougher. The travelling caught up with me and I started to feel the fatigue in my legs. I finished fifth in the points race and sixth in the final scratch.
 
-It was still a brilliant day, with two wins and plenty to learn from. I came away with more experience, and a clear idea of what to work on before the next round. Here are the photos from the day.
+It was still a brilliant day, with two wins and plenty to learn from. I came away with more experience and a clear idea of what to work on before the next round. Here are the photos from the day.
 
 Thank you to my partners and supporters for being part of the journey.

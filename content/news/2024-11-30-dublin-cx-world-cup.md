@@ -8,12 +8,14 @@ heroPos: "26%"
 heroShift: "-8%"
 heroFade: "30%"
 ---
-I won the Under 16 girls race at the Dublin Cyclocross World Cup support races on Saturday 30 November 2024. It was a brilliant way to be part of a World Cup weekend.
+I was back at the Dublin Cyclocross World Cup support races on Saturday 30 November 2024. I had raced the support race the year before, but it is always special to race on a World Cup quality course.
 
-The whole event was a spectacle. The races were held at the Sport Ireland Campus in Dublin, and it felt like nothing else I have raced at. The course was lined with big advertising banners and barriers, and there were crowds along the course. There was a huge start and finish arch, which made the line feel like a real moment. And there was sand and mud to deal with too.
+The whole event was a spectacle. It was held at the Sport Ireland Campus in Dublin, and the course was lined with big advertising banners and barriers. There were crowds along the course, and a huge start and finish arch that made the line feel like a real moment. And there was sand and mud to deal with too.
 
-The race was three laps. I was the fastest rider on every lap, and my lap times were 9:40, 9:55 and 10:09. I finished in 29 minutes 44 seconds, which was 1 minute 19 seconds ahead of the rider in second place.
+The sand was fairly compacted, but it was still important to build up momentum before going into it. After the first lap, a clear line emerged on the left, which made it much easier to ride.
 
-Then came the podium presentation. It was done properly, on a stage with the UCI Cyclo-cross World Cup Dublin backdrop and the sponsors' logos behind us. Standing on the top step, holding my trophy, was a very special moment for me.
+I was racing the Under 16 girls, over three laps. I was lucky enough to win it, in 29 minutes 44 seconds, 1 minute 19 seconds clear of second place. It was a brilliant way to be part of a World Cup weekend.
+
+Then came the podium. It was done properly, on a stage with the UCI Cyclo-cross World Cup Dublin backdrop and the sponsors' logos behind us. Standing on the top step with my trophy was a very special moment.
 
 Thank you to everyone who has supported me, and to my partners and supporters for helping make it possible. I could not do it without you.

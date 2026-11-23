@@ -8,12 +8,18 @@ heroPos: "20%"
 heroFade: "30%"
 heroShift: "-14%"
 ---
-I am delighted to be the Irish national youth champion in the U16 time trial and the U16 criterium, and to have added a silver medal in the road race, at the Cycling Ireland Youth Nationals in Moy, Co Tyrone, on 22 and 23 August 2026.
+Two national titles and a silver medal. I could hardly have asked for more from the Youth Nationals in Moy, Co Tyrone, on 22 and 23 August 2026.
 
-On the Saturday, in the 7.1 km time trial, I finished in 10 minutes 51.75 seconds, an average speed of 39.21 km/h. That was 47 seconds clear of the rider in second place, and it was a result I could not have asked for.
+The conditions were perfect for racing. It was warm and dry, with hardly any wind.
 
-The 56 km road race for the combined U15 and U16 girls was fast and close. Seven of us finished on the same time, and I took second place in the U16 category, just behind the winner.
+It started on the Saturday with the 7.1 km time trial. I have gone well in time trials before. I finished in 10 minutes 51.75 seconds, which made me the U16 national champion. I was not surprised to win, but the margin was a surprise. I finished 47 seconds clear of second place, and I had expected the other girls to be a lot closer.
 
-On the Sunday came the criterium, 25.5 km at an average speed of nearly 35 km/h. The U15 and U16 girls raced together, with separate titles, and I crossed the line second overall, just 12 seconds behind a U15 rider, which made me the U16 champion.
+Then came the road race, 56 km with the U15 and U16 girls together. It was fairly uneventful. Nobody in the group wanted to go racing, so we all stayed together. Seven of us finished on the same time, and I took second in the U16 category, just behind the winner.
 
-Two national titles and a silver medal in one weekend is a very special feeling, and I am so proud of the work that has gone into it. A huge thank you to my partners and supporters, and to everyone who has helped me along the way. I could not do it without you.
+On the Sunday it was the criterium, 25.5 km at nearly 35 km/h. The U15 and U16 girls raced together again, with separate titles. It was a much better race than the road race the day before.
+
+I knew that if there was going to be a race, I had to make it. So I attacked the climb to the finish on every lap. Lap by lap, that thinned the group down to three of us. I crossed the line second overall, 12 seconds behind a U15 rider. That made me the U16 champion for a second time that weekend.
+
+I was delighted for the other girls who made the podium too.
+
+I am so proud of the work that has gone into it. A huge thank you to my partners and supporters, and to everyone who has helped me along the way. I could not do it without you.

@@ -7,10 +7,12 @@ heroAlt: "Katie Turner riding alone on the Sir Chris Hoy Velodrome in Glasgow"
 heroPos: "40%"
 heroFade: "30%"
 ---
-I had a great weekend riding for the Leinster Cycling team at the British Cycling Track Inter-Regional Championships, held on 19 and 20 September 2026 at the Sir Chris Hoy Velodrome in Glasgow.
+It was my first time racing at the Sir Chris Hoy Velodrome in Glasgow, and I had a brilliant weekend there in the Leinster colours. It was a lot of fun.
 
-The championships bring together teams from Scotland, Wales, Ulster and the English regions, and Leinster was there as a guest team. Racing in the Leinster colours on a track like that, against riders from so many regions, was a fantastic experience.
+The atmosphere was fantastic. There was a crowd in the stands, and all the teams were in the centre of the velodrome, cheering each other on. It really made the racing special.
 
-I rode six events. My best result was third in the tempo race. I was fifth in the points race, tenth in the devil, in a field of 25, and tenth in the team sprint, which I rode with two of my Leinster team-mates. I finished eleventh in the madison and eighteenth in the scratch race.
+The British Cycling Track Inter-Regional Championships ran on 19 and 20 September 2026. Scotland, Wales, Ulster and the English regions were all there, and Leinster went over as a guest team. It is a real buzz to line up against riders from so many regions.
 
-A huge thank you to the Leinster team managers, Colm, Niall and Luca, for all the time and effort they put in to get us there and look after us across the weekend. Thank you too to my partners and supporters for helping make trips like this possible.
+I rode six events. My best was the tempo race, where I finished third. I was fifth in the points race. In the devil, I was tenth in a field of 25. I rode the team sprint with two of my Leinster team-mates, and we came tenth. I also rode the madison and the scratch race, and finished eleventh and eighteenth.
+
+A huge thank you to our team managers, Colm, Niall and Luca. They put in so much time and effort to get us there and look after us all weekend. Thank you too to my partners and supporters for helping make trips like this possible.

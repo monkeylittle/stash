@@ -17,4 +17,4 @@ Now I’m racing abroad, with my sights set on the world stage. I’m grateful t
 - Represented Ireland at the European Youth Olympic Festival in North Macedonia
 - Many national titles in road, track and cyclocross
 - Consistent top-10 finishes at the Ronde van Vlaanderen and Gent-Wevelgem youth days
-- Second overall, and 2 stage wins at the Trophée de l’Aisne in France, July 2026
+- Second overall, and 2 stage wins at the Trophée de l’Aisne in France, August 2026
