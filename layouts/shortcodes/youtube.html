@@ -1,24 +1,2 @@
-{{- /* YouTube video or Short, loaded only on click (no Google requests until played).
-   Usage: {{< youtube id="rEL1o0tGs_M" caption="..." credit="..." >}}
-   id accepts a bare ID or any youtube.com / youtu.be / shorts URL.
-   ratio: "vertical" (default for /shorts/ URLs) or "wide". title: accessible label. */ -}}
-{{- $in := .Get "id" | default (.Get 0) | default "" -}}
-{{- $id := $in -}}
-{{- with findRESubmatch `(?:shorts/|v=|youtu\.be/|embed/)([A-Za-z0-9_-]{11})` $in 1 }}{{ $id = index (index . 0) 1 }}{{ end -}}
-{{- if not (findRE `^[A-Za-z0-9_-]{11}$` $id) }}{{ errorf "youtube shortcode: bad id %q" $in }}{{ end -}}
-{{- $ratio := .Get "ratio" | default (cond (strings.Contains $in "/shorts/") "vertical" "wide") -}}
-{{- $title := .Get "title" | default (.Get "caption") | default "video" -}}
-{{- /* Poster is fetched once at build time and served from this site. */ -}}
-{{- $poster := "" -}}
-{{- with .Get "poster" }}{{ with resources.Get (printf "img/%s" .) }}{{ $poster = . }}{{ end }}
-{{- else }}
-  {{- $name := cond (eq $ratio "vertical") "hq2" "hqdefault" -}}
-  {{- with try (resources.GetRemote (printf "https://i.ytimg.com/vi/%s/%s.jpg" $id $name)) }}{{ with .Value }}{{ $poster = . }}{{ else }}{{ warnf "youtube poster not fetched for %s: %v" $id .Err }}{{ end }}{{ end }}
-{{- end -}}
-<figure class="yt yt-{{ $ratio }}">
-  <button class="yt-play" type="button" data-yt="{{ $id }}" aria-label="Play video: {{ $title }}">
-    {{- with $poster }}{{ $p := .Resize "720x webp q80" }}<img src="{{ $p.RelPermalink }}" alt="" width="{{ $p.Width }}" height="{{ $p.Height }}" loading="lazy">{{ end -}}
-    <span class="yt-icon" aria-hidden="true"></span>
-  </button>
-  {{- with .Get "caption" }}<figcaption>{{ . }}{{ with $.Get "credit" }}<span class="yt-credit">{{ . }}</span>{{ end }}</figcaption>{{ end }}
-</figure>
+{{- /* Usage: {{< youtube id="rEL1o0tGs_M" caption="..." credit="..." >}}  (see partials/video.html for options) */ -}}
+{{- partial "video.html" (dict "id" (.Get "id" | default (.Get 0)) "caption" (.Get "caption") "credit" (.Get "credit") "ratio" (.Get "ratio") "title" (.Get "title") "poster" (.Get "poster")) -}}

@@ -1,0 +1,32 @@
+{{- /* YouTube video or Short, loaded only on click (no Google requests until played).
+   Args (dict): id (bare ID or any youtube.com / youtu.be / shorts URL), caption, credit, ratio ("vertical"|"wide"; default from URL), title, poster, tile (true = a photo-grid tile with no caption). */ -}}
+{{- $in := .id | default "" -}}
+{{- $id := $in -}}
+{{- with findRESubmatch `(?:shorts/|v=|youtu\.be/|embed/)([A-Za-z0-9_-]{11})` $in 1 }}{{ $id = index (index . 0) 1 }}{{ end -}}
+{{- if not (findRE `^[A-Za-z0-9_-]{11}$` $id) }}{{ errorf "video: bad id %q" $in }}{{ end -}}
+{{- $ratio := .ratio | default (cond (strings.Contains $in "/shorts/") "vertical" "wide") -}}
+{{- $title := .title | default .caption | default "video" -}}
+{{- /* Poster is fetched once at build time and served from this site. */ -}}
+{{- $poster := "" -}}
+{{- with .poster }}{{ with resources.Get (printf "img/%s" .) }}{{ $poster = . }}{{ end }}
+{{- else }}
+  {{- $name := cond (eq $ratio "vertical") "hq2" "hqdefault" -}}
+  {{- with try (resources.GetRemote (printf "https://i.ytimg.com/vi/%s/%s.jpg" $id $name)) }}{{ with .Value }}{{ $poster = . }}{{ else }}{{ warnf "youtube poster not fetched for %s: %v" $id .Err }}{{ end }}{{ end }}
+{{- end -}}
+{{- $btn := printf `<button class="yt-play" type="button" data-yt="%s" aria-label="Play video: %s">` $id $title | safeHTML -}}
+{{- if .tile -}}
+<div class="yt yt-{{ $ratio }} yt-tile">
+  {{ $btn }}
+    {{- with $poster }}{{ $p := .Resize "720x webp q80" }}<img src="{{ $p.RelPermalink }}" alt="" width="{{ $p.Width }}" height="{{ $p.Height }}" loading="lazy">{{ end -}}
+    <span class="yt-icon" aria-hidden="true"></span>
+  </button>
+</div>
+{{- else -}}
+<figure class="yt yt-{{ $ratio }}">
+  {{ $btn }}
+    {{- with $poster }}{{ $p := .Resize "720x webp q80" }}<img src="{{ $p.RelPermalink }}" alt="" width="{{ $p.Width }}" height="{{ $p.Height }}" loading="lazy">{{ end -}}
+    <span class="yt-icon" aria-hidden="true"></span>
+  </button>
+  {{- with .caption }}<figcaption>{{ . }}{{ with $.credit }}<span class="yt-credit">{{ . }}</span>{{ end }}</figcaption>{{ end }}
+</figure>
+{{- end -}}
