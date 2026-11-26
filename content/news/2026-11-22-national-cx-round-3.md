@@ -8,6 +8,8 @@ heroPos: "40%"
 heroShift: "-19%"
 heroFade: "30%"
 ---
+{{< youtube id="https://youtube.com/shorts/eogYSBoiV1g" caption="A tricky off-camber the day before the race, and even trickier after a night of rain." >}}
+
 If you like cyclo-cross, you want a day like this one. Round 3 of the National Cyclo-Cross Series was hosted by De Ronde at the Cork Showgrounds in Curraheen, and it was properly muddy. I had a great time.
 
 It was the kind of mud that makes you swap bikes every lap. That meant a quick dash into the pits, a fresh bike and straight back out again. The pits were a bit chaotic, with lots of people in the pit lane, which made the bike changes tricky. It is hard work, but I love it. It is half the fun of cyclo-cross.
